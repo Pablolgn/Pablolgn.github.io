@@ -353,7 +353,7 @@ textarea {
 /*diseño responsitivo*/
 
     @media screen and (max-width: 980px){
-    #contenedor{
+    #lista1{
         width: 90%;
     }
     #contenido{
