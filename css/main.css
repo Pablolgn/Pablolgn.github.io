@@ -14,7 +14,7 @@ html {
     color: #4E413B;
     /*font-size: 1em;*/
     font-size: 18px;
-    /*margin:  0 4em 0 2.5em;*/
+    margin:  0 4em 0 2.5em;
     background-color: #FFFFFF;
 }
 
@@ -23,13 +23,6 @@ p {
     line-height: 1.5em;
     color: #000000;
  
-}
-
-.container{
-  width: :20%;
-  margin:0 auto;
-  overflow: hidden;
-
 }
 
 .flotante {
@@ -48,7 +41,7 @@ p {
 #lista1 li {
    display: inline;
    text-align: center;
-   margin: 20px 0.5em 0 0;
+   margin: 40px 0.5em 0 0;
    font-style:normal;
    font-weight:bold;
    font-size:1.5em;
@@ -58,10 +51,10 @@ p {
 }
 
 #lista1 li a {
-   padding: 0.3% 1.5% 0.3% 1.5%;
+   padding: 3px 15px 3px 15px;
    color: #000000;
    background-color: #FF6D24;
-   border: 0.16em ridge #E96A00;
+   border: 4px ridge #E96A00;
    text-decoration: none;
 }
 
@@ -355,10 +348,4 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
-
-
-/*diseño responsitivo*/
-
-
-}
 }
