@@ -117,7 +117,7 @@ video {
 
 
 .imagen{
-max-width: 400px;
+max-width: 25%;
 max-height: 250px;
 vertical-align: middle;
 float: right;
@@ -348,4 +348,19 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+
+
+/*diseño responsitivo*/
+
+    @media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+}
 }
