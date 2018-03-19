@@ -117,8 +117,7 @@ video {
 
 
 .imagen{
-max-width: 25%;
-max-height: 250px;
+max-width: 100%;
 vertical-align: middle;
 float: right;
 margin : 0 1em 0 0;
