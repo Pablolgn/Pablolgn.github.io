@@ -7,14 +7,17 @@
   <title>The Fifth Element</title>
 
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-sacle=1">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, maximum-sacle=1, minimum-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="Icono.png">
 
+  <!-- fuentes -->
 
-  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+
 
 
   <!-- Hoja del estilo creado a partir de una guía de estilo -->
@@ -28,21 +31,25 @@
 
 
 <header>
-<input type="checkbox" id="btn-menu">
-<label for="btn-menu"><img src="menu.png" alt=""></label>
+	<div class="contenedor">
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu"><img src="menu.png" alt=""></label>
 
-	<nav class="menu">
-		<ul>
-		    <li><a href="#sinopsis">Sinopsis</a></li>
-		    <li><a href="#necesidades">Necesidades</a></li>
-		    <li><a href="#tecnologias">Tecnologías</a></li>
-		    <li><a href="#impacto">Impacto</a></li>
-		    <li><a href="#referencias">Referencias</a></li>
-  		</ul>
-	</nav>
+			<nav class="menu">
+				<ul>
+				    <li><a href="#sinopsis">Sinopsis</a></li>
+				    <li><a href="#necesidades">Necesidades</a></li>
+				    <li><a href="#tecnologias">Tecnologías</a></li>
+				    <li><a href="#impacto">Impacto</a></li>
+				    <li><a href="#referencias">Referencias</a></li>
+		  		</ul>
+			</nav>
+	</div>	
 </header>
 	
 	<section id="sinopsis">
+
+		<br><br><br>
 		<article>
 			<h2 class="section_title">Sinopsis</h2>
 			  	
@@ -53,86 +60,88 @@
   		</article>
 	</section>
 
-	<section id="necesidades">
 
-			<hr class="separador" />
+	<section id="necesidades">
+			<hr class='principal' />
 			<h2 class="section_title">Necesidades</h2>
 
-		<article class="need">
+		<article class="need">		
+			<img class="imagen" src="img/cama.png" align="right">
 		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Auto-cama</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 17:27</p>
 		    <h3 class="need_title">Necesidad:</h3> 
-			<img class="imagen" src="img/cama.png">
 	    	<p class="need_value">En una vida ajetreada donde no tienes tiempo esta cama que se hace automáticamente te facilita mucho la vida.</p>
 		</article>
 
-		<article>
-			<hr class="separador" />
-		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Coche volador</h2>
+		<article class="need">
+			<hr class='separador' />
+	        <img  class="imagen" src="img/coche.png" align="right">
+		    <h3 class="need_main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_main">Coche volador</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 21:00</p>
 		    <h3 class="need_title">Necesidad:</h3>
-	        <img  class="imagen" src="img/coche.png">
 		    <p class="need_value">En unas ciudades que tienen un formato muy vertical y el gran trafico que sostiene el coche volador posibilita el trafico a varias alturas y esto disminuye los atascos.</p>
 		</article>
 
-		<article>
-			<hr class="separador" />
+		<article class="need">
+			<hr class='separador' />
+			<img  class="imagen" src="img/molecula.png" align="right">
 		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Regenerador Molecular</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 25:36</p>
 		    <h3 class="need_title">Necesidad:</h3>
-		    <img  class="imagen" src="img/molecula.png">
 		    <p class="need_value">Con este aparato se acabaron los problemas traumatológicos basta con una sola célula para reconstruir cualquier parte del cuerpo incuso el cuerpo entero.</p>
 		</article>
 
-		<article>
-			<hr class="separador" />
+		<article class="need">
+			<hr class='separador' />
+			<img  class="imagen" src="img/pastilla.png" align="right">
 		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Comida en pastillas</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 46:10</p>
 		    <h3 class="need_title">Necesidad:</h3>
-		    <img  class="imagen" src="img/pastilla.png">
 		    <p class="need_value">Con unas simples capsulas puedes preparar un gran plato, se acabo estar horas para preparar una gran comida en 5 segundos la tendrás lista.</p>
 		</article>
 
-		<article>
-			<hr class="separador" />
+		<article class="need">
+			<hr class='separador' />
+			<img  class="imagen" src="img/cara.png" align="right">
 		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Cambiador de caras</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 46:30</p>
 		    <h3 class="need_title">Necesidad:</h3>
-		    <img  class="imagen" src="img/cara.png">
 		    <p class="need_value">En un mundo en el que hay muchas especies conocidas y que viven juntas, puede ser útil cambiarte la cara para que el interlocutor hable con una cara que pueda conocer.</p>
 		</article>
 
-		<article>
-			<hr class="separador" />
+		<article class="need">
+			<hr class='separador' />
+			<img  class="imagen" src="img/arma.png" align="right">
 		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">ZF-1</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 46:54</p>
 		    <h3 class="need_title">Necesidad:</h3>
-		    <img  class="imagen" src="img/arma.png">
+	
 		    <p class="need_value">Es una multi-arma, tiene ametralladora, cohetes , lanzallamas, para llevar todo un arsenal con un simple arma y además tiene auto apuntado para no fallar.</p>
 		</article>
 
-		<article>
-			<hr class="separador" />
+		<article class="need">
+			<hr class='separador' />
+		    <img  class="imagen" src="img/pass.png" align="right">	
 		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Multipass</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 1:08:03</p>
 		    <h3 class="need_title">Necesidad:</h3>
-		    <img  class="imagen" src="img/pass.png">
 		    <p class="need_value">Es una tarjeta donde tendrás toda tu información, sirve desde como pasaporte hasta de identificador militar.</p>
 		</article>
 
-		<article>
-			<hr class="separador" />
+		<article class="need">
+			<hr class='separador' />
+		    <img  class="imagen" src="img/robot.png" align="right">
 		    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Robots limpiadores</h2>
 		    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 54:27</p>
 		    <h3 class="need_title">Necesidad:</h3>
-		    <img  class="imagen" src="img/robot.png">
 		    <p class="need_value">Ya no será necesario, limpiar el suelo, hay distintos robots que barren, friegan y enceran el suelo automáticamente.</p>
 		</article>
 	</section>
 
 
-	<section id=tecnologías>
-			<hr class="separador" />
+	<section id=tecnologias>
+		<br><br>
+			<hr class="principal" />
 		  	<h2 class="section_title">Tecnologías involucradas</h2>
 		    <p class="section_text">En el momento en el que salió la película muchos de las tecnologías no estaban preparadas todavía. Alguna de las tecnología involucradas son: la regeneración molecular, los transportes interplanetarios rápidos, la propulsión de los coches voladores…
 			</p> 
@@ -150,7 +159,7 @@
 
 	<section id=impacto>
 		<article>
-		<hr class="separador" />
+		<hr class="principal" />
 			<h2 class="section_title">Impacto</h2>
 	  		<p class="section_text">Esta película puede que haya tenido impacto ya que después de esta película que es un robot limpiador
 	   		[<a href="https://es.wikipedia.org/wiki/Robot_dom%C3%A9stico#Robots_Dom%C3%A9sticos_en_Ciencia_Ficci%C3%B3n"target="_blank">3</a>] menos sofisticado pero que toma la misma idea, también puede tener impacto el multipass en el que podrían haberse basado para la idea del DNI electrónico[<a href="https://es.wikipedia.org/wiki/Documento_de_identidad_electr%C3%B3nico"target="_blank">2</a>].</p>
@@ -159,8 +168,7 @@
 
 
 	<section id="referencias">
-
-		<hr class="separador" />
+		<hr class="principal" />
   		<h3 class="section_title">Referencias</h3>
   		
   		<ol class="referencias">

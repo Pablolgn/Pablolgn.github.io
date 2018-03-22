@@ -1,3 +1,8 @@
+
+
+
+
+
 body{
 	margin:0;
 	font-family: sans-serif;
@@ -6,14 +11,15 @@ body{
 
 
 
-
-
-
 /* Menu Repositivo */
 
 header {
 	width: 100%;
 	background: #FF6D24;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
 }
 #btn-menu {
 	display: none;
@@ -73,8 +79,8 @@ header label:hover {
 	.menu {
 		position: absolute;
 		background: #FF6D24;
-		width: 70%;
-		margin-left: -70%;
+		width: 60%;
+		margin-left: -60%;
 		transition: all 0.5s;
 
 	}
@@ -93,14 +99,32 @@ header label:hover {
 	}
 }
 
-
 /* Resto del programa */ 
-
-hr {
+.principal{
     display: block;
     height: 2px;
     border: 0;
-    border-top: 3px solid #4E413B;
-    margin: 2em 3em 2em 3em;
+    border-top: 3px solid #FF9E34;
+    margin: 4em 4% 4em 4%;
     padding: 0;
 }
+
+
+.separador{
+	display: block;
+    height: 2px;
+    border: 0;
+    border-top: 10px double #FF9E34;
+    margin: 3em 15% 3em 15%;
+    padding: 0;
+}
+
+#necesidades img {
+	width: 100%;
+	max-width: 300px;
+}
+
+.need {
+	margin: 0 10% 0 7%
+}
+
