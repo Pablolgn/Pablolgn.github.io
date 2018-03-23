@@ -50,7 +50,7 @@ header label:hover {
 .menu li{
 	text-align: center;
 	font-style:normal;
-	font-weight:nor;
+	font-weight:;
 	font-size:1em;
 	font-color:#ffffff;
 	font-family: 'Fondamento', cursive;
@@ -124,6 +124,7 @@ header label:hover {
 	max-width: 300px;
 }
 
+/* margenes */
 .need {
 	margin: 0 10% 0 7%
 }
@@ -143,4 +144,11 @@ article{
 .referencias {
 		margin: 0 1% 0 3%;
 
+}
+
+p{
+	font-weight:nor;
+	font-size:1em;
+	font-color:#ffffff;
+	font-family: 'Fondamento', cursive;
 }
