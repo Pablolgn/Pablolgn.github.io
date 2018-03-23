@@ -1,12 +1,10 @@
 
 
-
-
-
 body{
 	margin:0;
-	font-family: sans-serif;
-	background-color: #E2DED3;
+	background-color: #E3CE9D;
+    font-family: 'Fondamento', cursive;
+
 }
 
 
@@ -51,10 +49,10 @@ header label:hover {
 .menu li{
 	text-align: center;
 	font-style:normal;
-	font-weight:bold;
+	font-weight:nor;
 	font-size:1em;
 	font-color:#ffffff;
-	font-family: 'Cinzel', serif;
+	font-family: 'Fondamento', cursive;
 	flex-grow: 1;
 	border-right: 1px solid #E2DED3;
 }
@@ -120,6 +118,7 @@ header label:hover {
 }
 
 #necesidades img {
+	border-radius: 50%;
 	width: 100%;
 	max-width: 300px;
 }
@@ -128,3 +127,19 @@ header label:hover {
 	margin: 0 10% 0 7%
 }
 
+h2{
+	margin: 0 2% 1% 2%;
+}
+
+article{
+	margin: 0 5% 0 5%;
+}
+
+#tecnologias p{
+	margin: 0 1% 0 1%;
+}
+
+.referencias {
+		margin: 0 1% 0 3%;
+
+}
