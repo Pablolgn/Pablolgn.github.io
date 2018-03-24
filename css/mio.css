@@ -97,7 +97,6 @@ header label:hover {
 }
 
 /* Resto del programa */ 
-
 .principal{
     display: block;
     height: 2px;
@@ -118,9 +117,7 @@ header label:hover {
 }
 
 #necesidades img {
-	float: right;
-	display: inline;
-	margin: 1% 1% 2% 1%;
+	margin: 1% 1% 6% 1%;
 	border-radius: 50%;
 	width: 100%;
 	max-width: 300px;
@@ -133,6 +130,10 @@ header label:hover {
 
 h2{
 	margin: 0 2% 1% 2%;
+	font-style:normal;
+	font-weight:bold;
+	font-size:1.8em;
+	font-color:#ffffff;
 }
 
 article{
@@ -144,13 +145,12 @@ article{
 }
 
 .referencias {
-	margin: 0 1% 0 3%;
+		margin: 0 1% 0 3%;
 
 }
 
 p{
-	font-weight:nor;
-	font-size:1em;
+	font-weight:normal;
+	font-size:1.2em;
 	font-color:#ffffff;
-	font-family: 'Fondamento', cursive;
 }
