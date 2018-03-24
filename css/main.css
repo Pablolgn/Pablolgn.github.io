@@ -189,25 +189,21 @@ a:hover{ color: #FF6D24; text-decoration: underline}
 }
 
 footer .contenedor{
-
+	width: 100%
 	padding-bottom: 0.2em;
 	background: rgb(255,109,36,0.8);
 	justify-content: center;
 	color: #333;
 	text-align: center;
+	font-size: 1.4em;
 }
 
 .cpy{
 	font-size: 0.8;
 }
 
-
-.sociales {
-	width: 100%
-	font-size: 28px;
-}
 .sociales a {
-	margin: 1% 0 1% 0;
+	font-size: 34px;
 	padding-left: 0.3em;
 	color: #333;
 	text-decoration: none;
