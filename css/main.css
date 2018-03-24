@@ -1,354 +1,215 @@
-/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-/*
-html {
-    color: #4E413B;
-    font-size: 1em;
-    font-size: 18px;
-    margin:  0 4em 0 2.5em;
-    background-color: #D3D3D3;
-
-}
-*/
-
-p {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    color: #000000;
-
- 
-}
-
-.flotante {
-    display:scroll;
-        position:fixed;
-        bottom:0.7em;
-        right: 0.7em;
-}
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|zocial);
 
 
-#top ul{
-   list-style-type: none;
-   text-align: center;
-}
-
-#lista1 li {
-   display: inline;
-   text-align: center;
-   margin: 40px 0.5em 0 0;
-   font-style:normal;
-   font-weight:bold;
-   font-size:1.5em;
-   font-color:#ffffff;
-   font-family: 'Cinzel', serif;
+body{
+	margin:0;
+	background-color: #E6D59F;
+    font-family: 'Fondamento', cursive;
 
 }
 
-#lista1 li a {
-   padding: 3px 15px 3px 15px;
-   color: #000000;
-   background-color: #FF6D24;
-   border: 4px ridge #E96A00;
-   text-decoration: none;
+/* Menu Repositivo */
+
+header {
+	
+	width: 100%;
+	background: #FF6D24;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+#btn-menu {
+	display: none;
+}
+
+header label {
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #E2DED3;
+}
+
+header label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.3)
+}
+
+.menu ul{
+
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+
+}
+
+.menu li{
+	text-align: center;
+	font-style:normal;
+	font-weight:;
+	font-size:1em;
+	font-color:#ffffff;
+	font-family: 'Fondamento', cursive;
+	flex-grow: 1;
+	border-right: 1px solid #E2DED3;
+}
+
+.menu li:hover {
+	background: rgba(0,0,0,0.3);
 }
 
 
-#lista1 li a:hover{
-   background-color: #333333;
-   color: #FF7400;
+.menu li a{
+	display:block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
 }
 
+@media (max-width: 768px){
+	header label {
+		display: block;
+	}
 
+	.menu {
+		position: absolute;
+		background: #FF6D24;
+		width: 60%;
+		margin-left: -60%;
+		transition: all 0.5s;
+	}
 
+	.menu ul{
+		flex-direction: column;
+	}
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+	.menu li {
+		border-top: 1px solid #E2DED3;
+	}
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+
+	}
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
+/* Resto del programa */ 
+.principal{
     display: block;
-    height: 1px;
+    height: 2px;
     border: 0;
-    border-top: 1px solid #4E413B;
-    margin: 1em 0;
+    border-top: 3px solid #FF9E34;
+    margin: 4em 5% 4em 5%;
     padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
-audio,
-canvas,
-iframe,
-svg,
-img,
-video {
-    vertical-align: middle;
-}
-
-
-.imagen{
-max-width: 400px;
-max-height: 250px;
-vertical-align: middle;
-float: right;
-margin : 0 1em 0 0;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
+.separador{
+	display: block;
+    height: 2px;
     border: 0;
-    margin: 0;
+    border-top: 10px double #FF9E34;
+    margin: 3em 15% 3em 15%;
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
+#necesidades img {
 
-textarea {
-    resize: vertical;
+	float: right;
+	display: inline;
+	margin: 5% 1% 7% 1%;
+	border-radius: 50%;
+	width: 100%;
+	max-width: 300px;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+/* margenes */
+.need {
+	margin: 0 10% 0 7%
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
+.section_title{
+	margin: 0 2% 1% 2%;
+	font-style:normal;
+	font-weight:bold;
+	font-size:1.8em;
+	font-color:#ffffff;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+article{
+	margin: 0 5% 0 5%;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    -webkit-clip-path: none;
-    clip-path: none;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+#tecnologias p{
+	margin: 0 1% 0 1%;
+}
+#tecnologias h3{
+		font-size:1.4em;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
+.referencias {
+		margin: 0 1% 0 3%;
 
-.invisible {
-    visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+p{
+	font-weight:normal;
+	font-size:1.2em;
+	font-color:#ffffff;
 }
 
-.clearfix:after {
-    clear: both;
+.need_value_main{
+	margin-left: 2%;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.need_value{
+		margin-left: 2%;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+a:link{ color: #FF6D24; text-decoration: none}
+
+a:visited{ color: grey; text-decoration: none}
+
+a:hover{ color: #FF6D24; text-decoration: underline}
+
+/* footer */
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+footer .contenedor{
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+	padding-bottom: 0.2em;
+	background: rgb(255,109,36,0.8);
+	justify-content: center;
+	color: #333;
+	text-align: center;
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+.cpy{
+	font-size: 0.8;
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.sociales {
+	width: 100%
+	text-decoration:center;	
+	font-size: 28px;
+}
+.sociales a {
+	margin: 1% 0 1% 0;
+	padding-left: 0.3em;
+	color: #333;
+	text-decoration: none;
 }
