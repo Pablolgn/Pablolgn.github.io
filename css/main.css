@@ -208,3 +208,7 @@ footer .contenedor{
 	color: #333;
 	text-decoration: none;
 }
+
+.sociales a:hover {
+	border: 1px solid white;
+}
