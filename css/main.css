@@ -50,7 +50,7 @@ header label:hover {
 .menu li{
 	text-align: center;
 	font-style:normal;
-	font-weight:;
+	font-weight:bold;
 	font-size:1em;
 	font-color:#ffffff;
 	font-family: 'Fondamento', cursive;
@@ -179,14 +179,6 @@ a:hover{ color: #FF6D24; text-decoration: underline}
 /* footer */
 
 /* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
-
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
 
 footer .contenedor{
 	width: 100%
@@ -199,7 +191,7 @@ footer .contenedor{
 }
 
 .cpy{
-	font-size: 0.8;
+	font-size: 0.8em;
 }
 
 .sociales a {
